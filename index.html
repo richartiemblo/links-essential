@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ESSENTIAL · Complementos e infusiones</title>
+<meta name="description" content="Nuestra tienda oficial en Amazon España, lo más vendido y atención por WhatsApp.">
+<meta name="theme-color" content="#FFFDF8">
+<link rel="canonical" href="https://links.naturalbiopharma.com/">
+<link rel="icon" href="recursos/logo-essential.png">
+<link rel="apple-touch-icon" href="recursos/logo-essential.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ESSENTIAL · Complementos e infusiones">
+<meta property="og:description" content="Nuestra tienda oficial en Amazon España, lo más vendido y atención por WhatsApp.">
+<meta property="og:url" content="https://links.naturalbiopharma.com/">
+<meta property="og:image" content="https://links.naturalbiopharma.com/recursos/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="recursos/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Marca";src:url("recursos/montserrat-latin.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--fondo:#FFFDF8;--tarjeta:#FFFFFF;--principal:#FF3D00;--p:255,61,0;--acento:#858F25;--a:133,143,37;--texto:#231E19;--suave:#6B635A;--sobre-principal:#FFFFFF;--borde:#262626;--ancho:1080px;--lado:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--fondo);scroll-behavior:smooth}
+body{min-height:100vh;overflow-x:hidden;color:var(--texto);background:var(--fondo);font-family:"Marca",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+img{display:block;max-width:100%}
+.ico{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:2px solid var(--principal);outline-offset:3px}
+
+/* Portada */
+.portada{position:relative;isolation:isolate;overflow:hidden;background:var(--fondo)}
+.portada::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.1;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.logo-cabecera{position:absolute;z-index:4;top:calc(14px + env(safe-area-inset-top));left:var(--lado);width:68px;height:auto;filter:drop-shadow(0 4px 14px rgba(0,0,0,.7))}
+.portada-foto{position:relative;height:min(56svh,540px);overflow:hidden}
+.portada-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;animation:acercar 16s cubic-bezier(.2,.6,.3,1) both;will-change:translate}
+.portada-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,transparent 22%,transparent 46%,rgba(0,0,0,.82) 76%,var(--fondo) 100%)}
+.portada-texto{position:relative;z-index:3;max-width:620px;margin:-104px auto 0;padding:0 var(--lado) 44px}
+.portada:not(.con-foto) .portada-texto{margin-top:0;padding-top:120px;text-align:center}
+.antetitulo{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--principal);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.antetitulo::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--acento)}
+h1{font-size:clamp(34px,9.4vw,68px);font-weight:900;line-height:.96;letter-spacing:.005em;text-transform:uppercase;text-shadow:0 0 28px rgba(var(--p),.45),0 2px 0 rgba(0,0,0,.4)}
+h1 span{display:block;margin-top:12px;color:var(--principal);font-size:clamp(19px,5.2vw,28px);font-weight:700;line-height:1.22;letter-spacing:0;text-transform:none;text-shadow:0 0 22px rgba(var(--p),.35)}
+.entradilla{margin:12px 0 22px;color:var(--suave);font-size:16px;line-height:1.55}
+
+/* Botón principal */
+.cta{position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:62px;padding:16px 18px;border-radius:14px;background:var(--principal);color:var(--sobre-principal);font-size:clamp(15px,4.2vw,18px);font-weight:900;letter-spacing:.02em;line-height:1.15;text-align:center;text-transform:uppercase;text-decoration:none;animation:latido 2.8s ease-in-out infinite;transition:transform .15s}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-130%);animation:brillo 3.8s ease-in-out 1.4s infinite}
+.cta:active{transform:scale(.98)}
+.cta-flecha{flex:none;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.cta:hover .cta-flecha,.barra a:hover .cta-flecha{transform:translateX(4px)}
+.cta.pendiente{background:transparent;color:var(--texto);border:1.5px dashed rgba(var(--p),.6);animation:none;flex-direction:column;gap:6px}
+.cta.pendiente::after,.cta.pendiente .cta-flecha{display:none}
+.cta-nota{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:12px;color:var(--suave);font-size:13px;font-weight:600}
+.cta-nota span{display:inline-flex;align-items:center;gap:6px}
+.cta-nota .ico{width:16px;height:16px;color:var(--principal);stroke-width:2.4}
+.sello{display:inline-block;padding:3px 10px;border-radius:99px;background:var(--acento);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+
+/* Cifras */
+.cifras{display:grid;grid-template-columns:repeat(2,1fr);max-width:var(--ancho);margin:0 auto;border-block:1px solid #1d1d1d}
+.cifra{padding:26px 14px;text-align:center}
+.cifra:nth-child(odd){border-right:1px solid #1d1d1d}
+.cifra:nth-child(n+3){border-top:1px solid #1d1d1d}
+.cifra b{display:block;color:var(--principal);font-size:48px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums;text-shadow:0 0 26px rgba(var(--p),.45)}
+.cifra span{display:block;max-width:150px;margin:8px auto 0;color:var(--suave);font-size:12px;font-weight:700;letter-spacing:.08em;line-height:1.35;text-transform:uppercase}
+
+/* Secciones */
+.seccion{max-width:var(--ancho);margin:0 auto;padding:76px var(--lado) 8px}
+h2{font-size:clamp(30px,7.6vw,46px);font-weight:900;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+h2::after{content:"";display:block;width:54px;height:4px;margin-top:16px;border-radius:2px;background:var(--acento);box-shadow:0 0 18px rgba(var(--a),.6)}
+.tarjetas{display:grid;gap:12px;margin-top:30px}
+.tarjeta{display:grid;grid-template-columns:48px 1fr;gap:2px 16px;align-items:start;padding:20px;border:1px solid var(--borde);border-radius:18px;background:linear-gradient(160deg,#1c1c1c,#111);transition:border-color .25s,transform .25s}
+.tarjeta:hover{border-color:rgba(var(--p),.55);transform:translateY(-3px)}
+.tarjeta-ico{grid-row:span 2;display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:rgba(var(--p),.12);color:var(--principal)}
+.tarjeta b{display:block;font-size:18px;font-weight:800;line-height:1.25}
+.tarjeta p{margin-top:4px;color:var(--suave);font-size:15px}
+.filtro{display:grid;gap:12px;margin-top:22px}
+.filtro p{display:flex;gap:12px;align-items:flex-start;padding:18px 20px;border-radius:14px;background:#0d0d0d;font-size:16px;font-weight:600;line-height:1.45}
+.filtro .ico{flex:none;margin-top:1px;stroke-width:2.6}
+.filtro .no{border-left:3px solid var(--acento)}
+.filtro .no .ico{color:var(--acento)}
+.filtro .si{border-left:3px solid var(--principal)}
+.filtro .si .ico{color:var(--principal)}
+.lema{margin-top:40px;color:var(--principal);font-size:clamp(24px,6.4vw,36px);font-weight:900;font-style:italic;line-height:1.15;text-align:center;text-transform:uppercase;text-shadow:0 0 30px rgba(var(--p),.5)}
+
+/* Historia */
+.historia-cabecera{display:grid;gap:30px}
+.historia-foto{position:relative;aspect-ratio:6/5;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px -30px rgba(var(--p),.55)}
+.historia-foto img{width:100%;height:100%;object-fit:cover}
+.historia-foto::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.08);border-radius:inherit}
+.historia-texto{margin-top:22px}
+.historia-texto p{margin-bottom:12px;color:#dcdcdc;font-size:17px;line-height:1.6}
+.historia-texto p:first-child{color:var(--texto);font-size:19px;font-weight:700}
+.linea{position:relative;max-width:760px;margin:44px auto 0;padding-left:34px;list-style:none}
+.linea::before{content:"";position:absolute;top:6px;bottom:18px;left:8px;width:2px;background:linear-gradient(var(--principal),var(--acento) 70%,transparent)}
+.linea li{position:relative;padding-bottom:28px}
+.linea li::before{content:"";position:absolute;top:3px;left:-34px;width:18px;height:18px;border:3px solid var(--principal);border-radius:50%;background:var(--fondo);transition:background .5s .2s,box-shadow .5s .2s}
+.linea li.visto::before{background:var(--principal);box-shadow:0 0 0 5px rgba(var(--p),.15),0 0 22px rgba(var(--p),.8)}
+.cuando{display:block;color:var(--principal);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.linea p{margin-top:4px;color:#e2e2e2;font-size:16px;line-height:1.55}
+.cita{max-width:760px;margin:20px auto 0;padding:28px 26px;border:1px solid rgba(var(--a),.45);border-radius:20px;background:radial-gradient(120% 140% at 0% 0%,rgba(var(--a),.24),transparent 60%),#0c0c0c}
+.cita p{font-size:20px;font-weight:700;line-height:1.4}
+.cita cite{display:block;margin-top:14px;color:var(--principal);font-size:14px;font-style:normal;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+
+/* Galería */
+.galeria{padding-top:70px}
+.tira{display:flex;gap:12px;padding:0 var(--lado);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tira::-webkit-scrollbar{display:none}
+.tira figure{flex:0 0 70%;aspect-ratio:4/5;border-radius:18px;overflow:hidden;scroll-snap-align:center;background:#111}
+.tira img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tira figure:hover img{transform:scale(1.05)}
+.galeria-cabecera{max-width:var(--ancho);margin:0 auto 28px;padding:0 var(--lado)}
+.galeria.horizontal .tira figure{flex-basis:86%;aspect-ratio:3/2}
+.galeria-pie{max-width:var(--ancho);margin:18px auto 0;padding:0 var(--lado);color:var(--suave);font-size:15px;font-style:italic;text-align:center}
+
+/* Opciones */
+.opciones{display:grid;gap:12px;margin-top:30px}
+.opcion{display:flex;align-items:center;gap:16px;padding:18px;border:1px solid var(--borde);border-radius:16px;background:var(--tarjeta);text-decoration:none;transition:border-color .25s,transform .25s,background .25s}
+a.opcion:hover{border-color:rgba(var(--p),.7);background:#1f1f1f;transform:translateY(-2px)}
+.opcion-ico{flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:rgba(var(--p),.12);color:var(--principal)}
+.opcion-txt{flex:1;min-width:0}
+.opcion-txt b{display:block;font-size:16px;font-weight:800;line-height:1.3}
+.opcion-txt small{display:block;margin-top:3px;color:var(--suave);font-size:14px;line-height:1.4}
+.opcion .sello{margin-bottom:6px;padding:2px 8px;font-size:10px}
+.flecha{flex:none;width:20px;height:20px;fill:none;stroke:#777;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s,stroke .2s}
+a.opcion:hover .flecha{transform:translateX(3px);stroke:var(--principal)}
+.opcion.pendiente{border-style:dashed}
+.opcion.pendiente b,.opcion.pendiente small,.opcion.pendiente .opcion-ico{opacity:.6}
+
+/* Productos con foto (opcional): tarjetas que llevan directo a la ficha de cada producto */
+.productos{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}
+.producto{position:relative;display:flex;flex-direction:column;border:1px solid var(--borde);border-radius:18px;background:var(--tarjeta);overflow:hidden;text-decoration:none;transition:transform .25s,border-color .25s,box-shadow .25s}
+.producto:hover{transform:translateY(-3px);border-color:rgba(var(--p),.6);box-shadow:0 16px 34px -18px rgba(var(--p),.6)}
+.producto-foto{position:relative;display:block;aspect-ratio:1;background:#fff;padding:10px}
+.producto-foto img{width:100%;height:100%;object-fit:contain}
+.producto-sello{position:absolute;top:10px;left:10px;z-index:2}
+.producto-txt{display:block;padding:12px 14px 16px}
+.producto-txt b{display:block;font-size:15px;font-weight:800;line-height:1.25}
+.producto-txt small{display:block;margin-top:4px;color:var(--suave);font-size:13px;line-height:1.35}
+.producto-ir{display:inline-flex;align-items:center;gap:6px;margin-top:10px;color:var(--principal);font-size:13px;font-weight:800}
+.producto-ir .ico{width:16px;height:16px;stroke-width:2.4}
+.productos-todos{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px auto 0;max-width:460px;min-height:54px;padding:14px 18px;border:2px solid var(--principal);border-radius:14px;color:var(--texto);font-weight:800;text-decoration:none;transition:background .2s}
+.productos-todos:hover{background:rgba(var(--p),.08)}
+
+/* Cierre y pie */
+.cierre{max-width:620px;margin:0 auto;padding:96px var(--lado) 30px;text-align:center;background:radial-gradient(60% 50% at 50% 70%,rgba(var(--p),.16),transparent 70%)}
+.cierre h2::after{margin-inline:auto}
+.lineas{margin:26px 0 30px;font-size:19px;font-weight:700;line-height:1.5}
+.lineas span{display:block;color:var(--suave)}
+.lineas span:last-child{margin-top:8px;color:var(--principal);font-size:24px;font-weight:900;text-transform:uppercase;text-shadow:0 0 24px rgba(var(--p),.5)}
+.redes{display:flex;justify-content:center;gap:12px;margin-top:34px}
+.redes a{display:grid;place-items:center;width:50px;height:50px;border:1px solid #333;border-radius:50%;color:var(--principal);transition:border-color .2s,transform .2s}
+.redes a:hover{border-color:var(--principal);transform:translateY(-2px)}
+footer{padding:40px var(--lado) calc(40px + env(safe-area-inset-bottom));color:#777;font-size:12px;line-height:1.9;text-align:center}
+footer img{width:72px;height:auto;margin:0 auto 10px;opacity:.9}
+.pie-marca{max-width:330px;margin:0 auto 14px;color:var(--suave);font-size:14px;line-height:1.5}
+footer a{color:#9a9a9a}
+
+/* Barra fija con el botón principal: aparece cuando no se ve ninguno de los otros dos */
+.barra{position:fixed;inset:auto 0 0;z-index:50;padding:14px 14px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(0,0,0,.94) 38%);transform:translateY(110%);visibility:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),visibility .35s}
+.barra.activa{transform:none;visibility:visible}
+.barra a{display:flex;align-items:center;justify-content:center;gap:10px;max-width:460px;min-height:54px;margin:0 auto;border-radius:13px;background:var(--principal);color:var(--sobre-principal);font-size:15px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px -8px rgba(var(--p),.8)}
+
+/* Aparecer al bajar (solo con JavaScript; sin él, todo se ve) */
+.js .revela{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .revela.visto{opacity:1;transform:none}
+.js .tarjetas .revela:nth-child(2),.js .opciones .revela:nth-child(2){transition-delay:.08s}
+.js .tarjetas .revela:nth-child(3),.js .opciones .revela:nth-child(3){transition-delay:.16s}
+.js .tarjetas .revela:nth-child(4),.js .opciones .revela:nth-child(4){transition-delay:.24s}
+
+@keyframes acercar{from{scale:1.14}to{scale:1.02}}
+@keyframes latido{0%,100%{box-shadow:0 0 0 1px rgba(var(--p),.4),0 12px 34px -12px rgba(var(--p),.6)}50%{box-shadow:0 0 0 1px rgba(var(--p),.65),0 14px 50px -6px rgba(var(--p),.9)}}
+@keyframes brillo{0%{transform:translateX(-130%)}40%,100%{transform:translateX(130%)}}
+
+@media (min-width:700px){
+  :root{--lado:32px}
+  .productos{grid-template-columns:repeat(3,1fr)}
+  .tarjetas{grid-template-columns:repeat(2,1fr)}
+  .filtro,.opciones{grid-template-columns:repeat(2,1fr)}
+  .cifras{grid-template-columns:repeat(4,1fr)}
+  .cifra{border-top:0!important;border-right:1px solid #1d1d1d}
+  .cifra:last-child{border-right:0}
+  .tira figure{flex-basis:40%}
+  .galeria.horizontal .tira figure{flex-basis:62%}
+}
+@media (min-width:980px){
+  .portada.con-foto{min-height:min(100svh,880px);display:flex;align-items:center}
+  .portada-foto{position:absolute;top:0;right:0;width:56%;height:100%}
+  .portada-foto img{object-position:50% 25%}
+  .portada-foto{-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 14%,rgba(0,0,0,.7) 30%,#000 50%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 14%,rgba(0,0,0,.7) 30%,#000 50%)}
+  .portada-foto::after{background:linear-gradient(180deg,transparent 70%,var(--fondo) 100%)}
+  .portada-texto{width:100%;max-width:var(--ancho);margin:0 auto;padding:120px var(--lado) 90px}
+  .portada.con-foto .portada-texto>*{max-width:540px}
+  .logo-cabecera{left:max(var(--lado),calc((100vw - var(--ancho))/2 + var(--lado)));width:84px;top:28px}
+  .portada.con-foto .cta-caja{max-width:440px}
+  .portada.con-foto .cta-nota{justify-content:flex-start}
+  .tarjetas{grid-template-columns:repeat(4,1fr)}
+  .tarjeta{display:block;padding:24px}
+  .tarjeta-ico{margin-bottom:18px}
+  .tarjeta p{margin-top:8px}
+  .historia-cabecera{grid-template-columns:.95fr 1.05fr;align-items:center;gap:56px}
+  .tira{max-width:var(--ancho);margin:0 auto;overflow:visible}
+  .tira figure{flex:1 1 0}
+  .galeria.horizontal .tira{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .galeria.horizontal.de-tres .tira{grid-template-columns:2fr 1fr}
+  .galeria.horizontal.de-tres .tira figure:first-child{grid-row:span 2;aspect-ratio:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .revela{opacity:1;transform:none}
+}
+
+:root{--f:255,253,248;--borde:#EBE3D8}
+.portada::before{display:none}
+.logo-cabecera{width:auto;height:44px;padding:8px 12px;border-radius:12px;background:#fff;filter:none;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.portada-foto::after{background:linear-gradient(180deg,transparent 0%,transparent 52%,rgba(var(--f),.75) 80%,var(--fondo) 100%)}
+h1{text-transform:none;text-shadow:none;letter-spacing:-.02em;line-height:1.02}
+h1 span,.cifra b,.lema,.lineas span:last-child{text-shadow:none}
+h2,.lema,.lineas span:last-child{text-transform:none;letter-spacing:-.01em}
+h2::after{box-shadow:none}
+.cta,.barra a{text-transform:none;letter-spacing:0;border-radius:999px}
+.cifras{border-color:var(--borde)}
+.cifra:nth-child(odd),.cifra:nth-child(n+3){border-color:var(--borde)}
+.tarjeta,.filtro p,.cita,.tira figure{background:var(--tarjeta)}
+.historia-texto p,.linea p{color:var(--suave)}
+.opcion{background:var(--tarjeta);box-shadow:0 6px 20px -10px rgba(60,40,10,.25)}
+a.opcion:hover{background:var(--tarjeta)}
+.redes a{border-color:var(--borde)}
+footer,footer a{color:var(--suave)}
+.barra{background:linear-gradient(rgba(var(--f),0),rgba(var(--f),.96) 38%)}
+@media (min-width:700px){.cifra{border-right-color:var(--borde)}}
+@media (min-width:980px){.portada-foto{-webkit-mask-image:none;mask-image:none;border-radius:0 0 0 40px}}
+</style>
+</head>
+<body>
+<header class="portada con-foto"><img class="logo-cabecera" src="recursos/logo-essential.png" alt="ESSENTIAL"><div class="portada-foto"><img src="recursos/portada.jpg" alt="Té Verde Sencha Japonés de ESSENTIAL sobre hojas de té" fetchpriority="high" decoding="async"></div><div class="portada-texto"><p class="antetitulo">Marca española</p><h1>Complementos e infusiones ESSENTIAL<span>Para tu día a día</span></h1><p class="entradilla">Toda la gama, en nuestra tienda oficial de Amazon España.</p><div class="cta-caja cta-vigilar"><a class="cta" href="https://www.amazon.es/stores/ESSENTIAL/page/2CE9F00C-D9F2-439F-939F-1CE44112F85D"><span class="cta-texto">Ir a la tienda de Amazon</span><svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><p class="cta-nota"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Más de 20 productos</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Envío con Amazon</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>+3.000 valoraciones</span></p></div></div></header>
+<main>
+
+<section class="seccion"><p class="antetitulo">Lo más vendido</p><h2>Lo que más se llevan</h2><div class="productos"><a class="producto revela" href="https://www.amazon.es/dp/B0C4FK56M3"><span class="producto-foto"><img src="recursos/prostest.jpg" alt="Prostest" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Prostest</b><small>Cápsulas</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a><a class="producto revela" href="https://www.amazon.es/dp/B08JZJD1JS"><span class="producto-foto"><img src="recursos/kombucha.jpg" alt="Kombucha Detox" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Kombucha Detox</b><small>Infusión a granel</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a><a class="producto revela" href="https://www.amazon.es/dp/B07N1PLRDB"><span class="producto-foto"><img src="recursos/acni-help.jpg" alt="Acni Help" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Acni Help</b><small>Cápsulas</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a><a class="producto revela" href="https://www.amazon.es/dp/B08THYZRPP"><span class="producto-foto"><img src="recursos/dulces-noches.jpg" alt="Dulces Noches" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Dulces Noches</b><small>Infusión a granel</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a><a class="producto revela" href="https://www.amazon.es/dp/B08TJ2PHS8"><span class="producto-foto"><img src="recursos/te-verde-sencha.jpg" alt="Té Verde Sencha Japonés" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Té Verde Sencha Japonés</b><small>Té a granel</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a><a class="producto revela" href="https://www.amazon.es/dp/B09Z3BVGGL"><span class="producto-foto"><img src="recursos/artic-complex.jpg" alt="Artic Complex" loading="lazy" decoding="async"></span><span class="producto-txt"><b>Artic Complex</b><small>Cápsulas</small><span class="producto-ir">Ver en Amazon<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></span></span></a></div><a class="productos-todos revela" href="https://www.amazon.es/stores/ESSENTIAL/page/2CE9F00C-D9F2-439F-939F-1CE44112F85D">Ver toda la gama<svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><p class="galeria-pie">Cada botón te lleva a la ficha del producto en Amazon España.</p></section>
+
+
+
+<section class="seccion"><p class="antetitulo">Estamos aquí</p><h2>¿Tienes una duda?</h2><nav class="opciones" aria-label="¿Tienes una duda?"><a class="opcion revela" href="https://wa.me/34696259787?text=Hola%20ESSENTIAL%20%F0%9F%91%8B%20Tengo%20una%20duda%3A%20"><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"/><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"/></svg></span><span class="opcion-txt"><b>Escríbenos por WhatsApp</b><small>Te responde una persona del equipo, de lunes a viernes de 9 a 19 h</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><a class="opcion revela" href="https://www.instagram.com/natural.bio.pharma/"><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg></span><span class="opcion-txt"><b>Síguenos en Instagram</b><small>Ideas para tu día a día</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><a class="opcion revela" href="https://www.tiktok.com/@essential.spain"><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"/></svg></span><span class="opcion-txt"><b>Síguenos en TikTok</b><small>Vídeos cortos</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a></nav></section>
+<section class="cierre revela"><h2>Lo esencial, primero</h2><p class="lineas"><span>Complementos alimenticios e infusiones.</span><span>Marca española 🇪🇸</span><span>Toda la gama, en Amazon</span></p><div class="cta-caja cta-vigilar"><a class="cta" href="https://www.amazon.es/stores/ESSENTIAL/page/2CE9F00C-D9F2-439F-939F-1CE44112F85D"><span class="cta-texto">Ir a la tienda de Amazon</span><svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><p class="cta-nota"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Más de 20 productos</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Envío con Amazon</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>+3.000 valoraciones</span></p></div><div class="redes"><a href="https://www.instagram.com/natural.bio.pharma/" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg></a><a href="https://www.tiktok.com/@essential.spain" aria-label="TikTok"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"/></svg></a></div></section>
+</main>
+<footer><img src="recursos/logo-essential.png" alt="ESSENTIAL" width="120" height="120" loading="lazy"><p class="pie-marca">Complementos alimenticios e infusiones. Marca española.</p><p>© 2026 ESSENTIAL · Los complementos alimenticios no sustituyen una dieta variada y equilibrada ni un estilo de vida saludable. Esta página no usa cookies.</p><p><a href="aviso-legal/">Aviso legal</a> · <a href="politica-de-privacidad/">Privacidad</a> · <a href="politica-de-cookies/">Cookies</a></p></footer>
+<div class="barra"><a href="https://www.amazon.es/stores/ESSENTIAL/page/2CE9F00C-D9F2-439F-939F-1CE44112F85D">Tienda en Amazon<svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a></div>
+<script>
+(function(){
+  var raiz=document.documentElement, quieto=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  raiz.classList.add("js");
+  // Años «desde»: se recalculan con la fecha de quien mira la página.
+  var anio=new Date().getFullYear();
+  document.querySelectorAll("[data-desde]").forEach(function(el){el.dataset.valor=anio-(+el.dataset.desde);el.textContent=el.dataset.valor;});
+  function contar(el){
+    var fin=+el.dataset.valor; if(quieto){el.textContent=fin;return;}
+    var t0=performance.now();
+    (function paso(t){var k=Math.min(1,(t-t0)/1300);el.textContent=Math.round(fin*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(paso);})(t0);
+  }
+  if(!("IntersectionObserver" in window)){document.querySelectorAll(".revela").forEach(function(el){el.classList.add("visto");});return;}
+  var ver=new IntersectionObserver(function(entradas){entradas.forEach(function(en){
+    if(!en.isIntersecting)return; en.target.classList.add("visto"); ver.unobserve(en.target);
+    en.target.querySelectorAll("[data-valor]").forEach(contar);
+  });},{threshold:.18,rootMargin:"0px 0px -6% 0px"});
+  document.querySelectorAll(".revela").forEach(function(el){ver.observe(el);});
+  // Barra fija: solo cuando no se ve ningún botón principal y ya se ha bajado.
+  var barra=document.querySelector(".barra"), visibles=new Set();
+  if(barra){
+    var mirar=new IntersectionObserver(function(entradas){entradas.forEach(function(en){en.isIntersecting?visibles.add(en.target):visibles.delete(en.target);});
+      barra.classList.toggle("activa",visibles.size===0&&scrollY>window.innerHeight*.4);},{threshold:0});
+    document.querySelectorAll(".cta-vigilar").forEach(function(el){mirar.observe(el);});
+  }
+  // La foto de la portada baja más despacio que la página.
+  var foto=document.querySelector(".portada-foto img");
+  if(foto&&!quieto){var pendiente=false;addEventListener("scroll",function(){if(pendiente)return;pendiente=true;requestAnimationFrame(function(){var y=scrollY;if(y<innerHeight*1.3)foto.style.translate="0 "+(y*.28).toFixed(1)+"px";pendiente=false;});},{passive:true});}
+})();
+</script>
+</body>
+</html>
